@@ -9,13 +9,13 @@ public class Crouch : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.LeftControl))
+        if(Input.GetKeyDown(KeyCode.Z))
         {
             transform.localScale = crouchScale;
             transform.position = new Vector3(transform.position.x, transform.position.y -0.5f, transform.position.z);
         }
 
-        if(Input.GetKeyUp(KeyCode.LeftControl))
+        if(Input.GetKeyUp(KeyCode.Z))
         {
             transform.localScale = playerScale;
             transform.position = new Vector3(transform.position.x, transform.position.y +0.5f, transform.position.z);
